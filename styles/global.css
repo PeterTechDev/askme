@@ -1,0 +1,51 @@
+* {
+    /* reset na estilização padrão dos navegadores. Pode-se usar em todos os CSS's*/
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    /* Salvando em variáveis as cores que serão utilizadas */
+    --black:#0D114F;
+    --white: #FAFAFA;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #F6FAFF;
+    --red: #E83F5B;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+
+    --gray-dark: #4D5E77;
+    --gray-blue: #A1B2CD;
+    --gray-light: #E5EAF1;
+
+    font-size: 10px;
+
+    /* Setando toda a fonte size para 10px fica mais fácil transformar para rem, pois 28px é igual a 2.8rem / 8px é igual a 0.8rem */
+    /* 1.75rem = 28px (28 dividido por 16) */
+    /* REM é para substituir o Pixel */
+
+    /* DICA:  */
+    /* 1rem = 16px (User Agent) = 100% (User Agent) */
+
+    /* Serve para acompanhar o tamanho da tela exibido pelo navegador */
+    /* 2rem = 2 vezes o tamanho exibido pelo navegador */
+}
+
+body {
+    height: 100vh; /* vh = view height. Neste caso vai ser ocupar o tamanho completo da tela exibida pelo navegador */
+    /* width: 100vw; view width. Mesmo raciocínio acima */
+    /* chamar a variável definida por -- é só usar como no ex abaixo */
+    background: var(--background);
+}
+
+body, button, input, textarea {
+    /* reset nos estilos desses inputs pois se colocarmos só no body os buttons e outros inputs não são incluidos*/
+    font-size: clamp(14px, 1.6rem, 2vw);
+    /* clamp é um intervalo de tamanho. O primeiro valor é o tamnho mínimo. O segundo é o padrão. O terceiro é o maior*/
+   
+    font-family: ;
+}

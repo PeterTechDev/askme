@@ -1,0 +1,52 @@
+<!-- Central de perguntas anônimas -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar sala - NLW Discover</title>
+    <!-- link rel é para chamar o CSS dentro do HTML -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <img src="./assests/Logo.svg" alt="Logo do site" />
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- formulário -->
+            <section>
+                <h2>Entre como participante</h2>
+                <form action="">
+                    <!-- sr-only (screen only) serve para esconder o label do navegador. Existirá, mas ficará escondido. -->
+                    <label class="sr-only" for="room-id">Código da sala</label>
+                    <input id="room-id" type="number" placeholder="Código da sala">
+                    <button>
+                        <img src="./assests/enter-room.svg" alt="Entrar na sala">
+                        Entrar na sala
+                    </button>
+                </form>
+            </section>
+
+            <div class="separator">
+                <div></div>
+                <div>ou</div>
+                <div></div>
+            </div>
+
+            <section>
+                <h2>Crie sua própria sala de forma fácil</h2>
+                <a href="/create-room.html">
+                    <img src="/assests/users .svg" alt="Criar Sala"> 
+                    Criar Sala
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
