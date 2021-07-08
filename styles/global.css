@@ -68,3 +68,44 @@ body, button, input, textarea {
     white-space: nowrap;
     border-width: 0;
 }
+
+/* INPUT E BOTOES */
+input, button, .button {
+    border-radius: .8rem;
+    height: 5rem;
+}
+
+button, .button {
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 0; /*espaço entre as linhas do texo*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: filter .2s; /*define o tempo de duração do filter*/
+
+    background-color: var(--blue);
+    color: var(--white);
+
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    filter:brightness(1.2) /*aplica brilho*/
+    
+}
+
+button > img,
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+.button.outLined,
+.button.outLined {
+    background-color: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
