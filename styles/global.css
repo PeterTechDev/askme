@@ -36,6 +36,7 @@ html {
 }
 
 body {
+    display: flex;
     height: 100vh; /* vh = view height. Neste caso vai ser ocupar o tamanho completo da tela exibida pelo navegador */
     /* width: 100vw; view width. Mesmo raciocínio acima */
     /* chamar a variável definida por -- é só usar como no ex abaixo */
