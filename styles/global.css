@@ -47,5 +47,24 @@ body, button, input, textarea {
     font-size: clamp(14px, 1.6rem, 2vw);
     /* clamp é um intervalo de tamanho. O primeiro valor é o tamnho mínimo. O segundo é o padrão. O terceiro é o maior*/
    
-    font-family: ;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto; /*sem margem em cima e embaixo e automatico nas laterais*/
+}
+
+.sr-only {
+    /* esconder os elementos para somente os leitores de busca encontrarem por questões de acessibilidade */
+    position: absolute; /*ignora tudo e fica por cima de tudo*/
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px; /*como ele tem 1px de tamanho e não tem padding ele vai ficar 1px para fora da tela na esquerda em cima*/
+    overflow: hidden; /*para não ter barra de rolagem*/
+    clip-path: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
 }
