@@ -40,7 +40,7 @@ main h2 {
 }
 
 input {
-    border: .2rem solid var(--gray-blue);
+    border: .2rem solid var(--grey-blue);
     padding: 0 1.6rem;
 }
 
@@ -58,7 +58,7 @@ input, button, .button {
 }
 
 .separator div:nth-child(2) {
-    color: var(--gray-blue);
+    color: var(--grey-blue);
     font-family: 'Poppins';
     font-weight: 400;
     padding: 0 1.35rem;
