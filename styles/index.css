@@ -26,7 +26,7 @@ main {
 }
 
 main .container {
-    width: min(36.3rem 100%); /*sempre da preferência ao menos valor informado. Se a tela for maior que 36.3rem ele fica em 100 para não vazar na tela */
+    width: min(36.3rem, 100%); /*sempre da preferência ao menos valor informado. Se a tela for maior que 36.3rem ele fica em 100 para não vazar na tela */
     
 }
 
