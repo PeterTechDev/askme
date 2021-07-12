@@ -132,7 +132,7 @@
     align-items: center;
     justify-content: flex-end; /*para os elementos flex irem para o final da div*/
 }
-
+ 
 .question-wrapper .actions > a {
     display: flex;
     align-items: center;
