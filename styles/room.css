@@ -94,3 +94,67 @@
     padding: .8rem 2.4rem;
     line-height: 2.4rem;
 }
+
+/* Questões */
+
+.question-wrapper {
+    background: var(--light-blue);
+    margin-bottom: 2.8rem;
+    border-radius: 0 8px 8px 8px;
+    padding:  2.4rem;
+}
+
+.question-wrapper .question-content {
+    display: flex;
+    align-items: center; 
+    
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-wrapper .question-content .user {
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
+.question-wrapper .question-content p {
+    margin-left: 1.6rem;
+    word-break: break-word; /*Para quando escrever uma palavra muito grande ela não quebrar o layout*/
+
+    display: flex;
+    align-items: center; /*dentro do p ele alinha ao centro*/
+    min-height: 5.5rem; /*para quando o texto for menos, ele continuar centralizado imagem a esquerda dele*/
+}
+
+.question-wrapper .actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /*para os elementos flex irem para o final da div*/
+}
+
+.question-wrapper .actions > a {
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .actions > a > img{
+  margin-right: .8rem;
+}
+
+.question-wrapper .actions > a + a { /* o + é um seletor para selecionar o irmão de a */
+    margin-left: 2.4rem;
+
+}
+
+/* QUESTIONS READ */
+
+.question-wrapper.read {
+    background: var(--grey-medium);
+}
+
+.question-wrapper.read .user{
+    background: var(--grey-blue);
+}
+
+
