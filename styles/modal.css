@@ -1,3 +1,9 @@
+.modal-wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    /* PARA QUANDO PRECISAR MOSTRAR A MODAL IRÁ SER ADD A CLASSE ACTIVE */
+}
+
 .modal-wrapper{
     position: fixed;
 
@@ -10,6 +16,10 @@
     display: flex;
 
     background: rgba(4,9,17,.8); /*O a do rgb é para add a opacidade(0.8 é 80%)*/
+
+    visibility: hidden;
+    opacity: 0;
+    /* Os dois de cima fazem a mesma coisa (esconder a modal) usamos os dois para caso haja alguma imcompatibilidade de algum navegador */
 }
 
 .modal-wrapper .modal{
