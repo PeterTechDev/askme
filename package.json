@@ -1,0 +1,25 @@
+{
+  "name": "askme",
+  "version": "1.0.0",
+  "description": "Projeto para perguntas anônimas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterTechDev/askme.git"
+  },
+  "keywords": [],
+  "author": "Peter Leite Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterTechDev/askme/issues"
+  },
+  "homepage": "https://github.com/PeterTechDev/askme#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
