@@ -6,6 +6,8 @@ const server = express()
 
 server.set('view engine', 'ejs')
 
+server.use(express.static("public"))
+
 server.set('views', path.join(__dirname, 'views'))
 /// dirbane é o nome da pasta atual
 
