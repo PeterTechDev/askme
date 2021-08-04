@@ -15,7 +15,7 @@ header {
 #bg {
     grid-area: left;
     
-    background: url(/assests/home-bg-img.svg) no-repeat top/contain; /*no repeat para a imagem não se repetir */ /* top/contain para a imagem se encaixar na div que está*/
+    background: url(/images/home-bg-img.svg) no-repeat top/contain; /*no repeat para a imagem não se repetir */ /* top/contain para a imagem se encaixar na div que está*/
     background-position-x: -10rem; /*não gera overflow como usando margin*/
 }
 
