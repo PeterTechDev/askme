@@ -43,34 +43,8 @@
 
         <main>
             <div class="container">
-                <!-- formulário -->
-                <section>
-                    <h2>Entre como participante</h2>
-                    <form action="">
-                        <!-- sr-only (screen only) serve para esconder o label do navegador. Existirá, mas ficará escondido. -->
-                        <label class="sr-only" for="room-id">Código da sala</label>
-                        <input id="room-id" type="number" placeholder="Código da sala">
-                        <button>
-                            <img src="./images/enter-room.svg" alt="Entrar na sala">
-                            Entrar na sala
-                        </button>
-                    </form>
-                </section>
-
-                <div class="separator">
-                    <div></div>
-                    <div>ou</div>
-                    <div></div>
-                </div>
-
-                <section>
-                    <h2>Crie sua própria sala de forma fácil</h2>
-                    <a href="/create-room" class="button outLined">
-                        <img src="/images/users .svg" alt="Criar Sala">
-                        Criar Sala
-                    </a>
-                </section>
-
+                <!-- vai renderizar de acordo com a url (index ou create-room) -->
+                <%- include(`parts/${page}`) %>
             </div>
         </main>
 
