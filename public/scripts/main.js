@@ -12,3 +12,12 @@ checkButtons.forEach(button =>{
     })
 })
 //add o event listener em todos o checkbuttons para o evento click executar o modal.open no arquivo modal.js
+
+// Abrir a modal quando clicar no botao excluir
+const deleteButton = document.querySelectorAll(".actions a.delete")
+
+deleteButton.forEach(button => {
+    button.addEventListener("click", event =>{
+        modal.open()
+    })
+})
