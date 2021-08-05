@@ -33,7 +33,14 @@ function handleClick(event, check = true){
     event.preventDefault()
     // Para os links não redirecionarem quando clicados (cerquilha no barra de endereço)
     const text = check ? "Marcar como lida" : "Excluir"
+    const slug = check ? "check" : "delete"
+    const roomId = document.querySelector("#room-id").dataset.id
+    const questionId = event.target.dataset.id
+
     
+    const form = document.querySelector(".modal form")
+    form.setAttribute("action", `/room/${roomId}/:question/${slug}`)
+
     modalTitle.innerHTML = `${text} esta pergunta`
     modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} esta pergunta`
     modalButton.innerHTML = `Sim, ${text.toLowerCase()}`
