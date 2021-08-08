@@ -4,6 +4,6 @@ const { open } = require("sqlite");
 
 module.exports = ()=> 
     open({
-        filename: '/src/database/pergunteme.sqlite',
+        filename: './src/database/pergunteme.sqlite',
         driver: sqlite3.Database,
     });
